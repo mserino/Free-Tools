@@ -1,0 +1,12 @@
+.selected-tools {
+  width: 40%;
+  padding: 20px; }
+  .selected-tools .title {
+    background-color: #44BFBF; }
+  .selected-tools-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    padding: 20px 0; }
+    .selected-tools-list .tool {
+      margin: 0; }

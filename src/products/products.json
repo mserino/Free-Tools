@@ -1,0 +1,37 @@
+[
+    {   
+        "id": 1,
+        "name": "Pure cool",
+        "price": 9.99
+    },
+    {
+        "id": 2,
+        "name": "Cyclone v10",
+        "price": 9.99
+    },
+    {
+        "id": 3,
+        "name": "Hair dryer",
+        "price": 9.99
+    },
+    {
+        "id": 4,
+        "name": "Humidifier",
+        "price": 9.99
+    },
+    {
+        "id": 5,
+        "name": "Task lights",
+        "price": 9.99
+    },
+    {
+        "id": 6,
+        "name": "Hand dryer",
+        "price": 9.99
+    },
+    {
+        "id": 7,
+        "name": "Robot vacuum",
+        "price": 9.99
+    }
+]
