@@ -1,7 +1,7 @@
 import React from 'react';
 import './Tool.css';
 
-function Tool({ id, name, price }) {
+const Tool = ({ id, name, price }) => {
     return(
         <li className="tool" key={ id }>
             <span className="tool-name">{ name }</span>

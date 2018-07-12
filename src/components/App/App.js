@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import tools from '../products/products.json';
+import tools from '../../products/products.json';
 import ToolsList from '../ToolsList/ToolsList';
 import SelectedTools from '../SelectedTools/SelectedTools';
 

@@ -2,7 +2,7 @@ import React from 'react';
 import Tool from '../Tool/Tool';
 import './ToolsList.css';
 
-function ToolsList({ tools }) {
+const ToolsList = ({ tools }) => {
     return (
       <div className="tools-list">
             <h2 className="title">Select your tools</h2>

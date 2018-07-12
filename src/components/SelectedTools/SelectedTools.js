@@ -2,7 +2,7 @@ import React from 'react';
 import Tool from '../Tool/Tool';
 import './SelectedTools.css';
 
-function SelectedTools() {
+const SelectedTools = () => {
     return(
         <div className="selected-tools">
             <h2 className="title">Your tools</h2>
