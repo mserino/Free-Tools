@@ -1,13 +1,28 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore } from 'redux'
+
+import { createLogger } from 'redux-logger'
+import thunkMiddleware from 'redux-thunk'
+import { createStore, applyMiddleware } from 'redux'
 import { Provider } from  'react-redux';
-import rootReducer from './reducers';
+import rootReducer from './redux/reducers';
+import { fetchTools } from './redux/actions';
+
+import App from './containers/App';
+
 import './index.css';
 
-import App from './components/App/App';
+const loggerMiddleware = createLogger();
 
-const store = createStore(rootReducer);
+const store = createStore(
+    rootReducer,
+    applyMiddleware(
+      thunkMiddleware, // lets us dispatch() functions
+      loggerMiddleware // neat middleware that logs actions
+    )
+  );
+
+store.dispatch(fetchTools());
 
 ReactDOM.render(
     <Provider store={ store }>

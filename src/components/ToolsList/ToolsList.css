@@ -3,6 +3,8 @@
   padding: 20px; }
   .tools-list .title {
     background: #0468BF; }
+  .tools-list .tool {
+    cursor: pointer; }
 
 .title {
   margin: 0;
@@ -16,9 +18,3 @@
   list-style: none;
   display: flex;
   flex-wrap: wrap; }
-
-.tool {
-  background: white;
-  padding: 30px;
-  margin-right: 5px;
-  margin-bottom: 10px; }

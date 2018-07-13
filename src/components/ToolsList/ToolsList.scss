@@ -5,6 +5,10 @@
     & .title {
         background: #0468BF;
     }
+
+    & .tool {
+        cursor: pointer;
+    }
 }
 
 
@@ -13,7 +17,7 @@
     color: white;
     text-align: center;
     padding: 10px 0;
-  }
+}
 
 .tools {
     margin: 0;
@@ -23,9 +27,3 @@
     flex-wrap: wrap;
 }
 
-.tool {
-    background: white;
-    padding: 30px;
-    margin-right: 5px;
-    margin-bottom: 10px;
-}

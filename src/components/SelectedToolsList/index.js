@@ -2,7 +2,7 @@ import React from 'react';
 import Tool from '../Tool/Tool';
 import './SelectedTools.css';
 
-const SelectedTools = () => {
+const SelectedToolsList = () => {
     return(
         <div className="selected-tools">
             <h2 className="title">Your tools</h2>
@@ -13,4 +13,4 @@ const SelectedTools = () => {
     )
 }
 
-export default SelectedTools;
+export default SelectedToolsList;
