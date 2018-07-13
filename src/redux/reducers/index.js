@@ -1,4 +1,4 @@
-import { RECEIVE_TOOLS } from '../actions/action-types';
+import { RECEIVE_TOOLS, ADD_SELECTED_TOOL } from '../actions/action-types';
 
 const initialState = {
     tools: [],
@@ -12,22 +12,22 @@ export default (state = initialState, action) => {
                 ...state,
                 tools: action.payload
             }
-        // case ADD_SELECTED_TOOL:
-        //     return {
-        //         ...state,
-        //         selectedTools: [
-        //             ...state.selectedTools,
-        //             action.payload
-        //         ]
-        //     }
+        case ADD_SELECTED_TOOL:
+            return {
+                ...state,
+                selectedTools: [
+                    ...state.selectedTools,
+                    action.payload
+                ]
+            }
         default: 
             return state;
     }
 }
 
-export const getAllTools = state => {
-    return state.tools;
-};
+// export const getAllTools = state => {
+//     return state.tools;
+// };
 
 // export const getSelectedTools = state => {
 //     console.log('state >>', state);

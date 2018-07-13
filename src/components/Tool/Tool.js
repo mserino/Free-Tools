@@ -1,7 +1,11 @@
 import React from 'react';
 import './Tool.css';
 
-const Tool = ({ id, name, price }) => {
+const Tool = ({ id, name, price, onElementClicked }) => {
+    // const onElementClicked = () => {
+    //     console.log('element clicked');
+    // }
+
     return(
         <li className="tool" key={ id }>
             <span className="tool-name">{ name }</span>

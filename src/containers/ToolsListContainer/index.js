@@ -3,10 +3,14 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 
 import ToolsList from '../../components/ToolsList';
+// import { addSelectedTool } from '../../redux/actions';
 
 const ToolsListContainer = ({ tools }) => {
+
     return (
-        <ToolsList tools={ tools } />
+        <ToolsList
+            tools={ tools }
+        />
     );
 }
 

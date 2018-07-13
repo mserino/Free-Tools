@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-// import { getSelectedTools } from '../../redux/reducers/tools';
 
 import SelectedToolsList from '../../components/SelectedToolsList';
 
@@ -19,9 +18,9 @@ SelectedToolsListContainer.propTypes = {
     })).isRequired
 }
 
-const mapStateToProps = state => {
+const mapStateToProps = state => ({
     selectedTools: state.selectedTools
-}
+})
 
 export default connect(
     mapStateToProps
