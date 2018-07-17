@@ -22,3 +22,9 @@ export function fetchTools() {
         dispatch(receiveTools(tools));
     }
 }
+
+export const onToolClicked = (tool) => {
+    return function (dispatch) {
+        dispatch(addSelectedTool(tool));
+    }
+}
