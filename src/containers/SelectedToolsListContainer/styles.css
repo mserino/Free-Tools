@@ -9,4 +9,5 @@
     list-style: none;
     padding: 20px 0; }
     .selected-tools-list .tool {
-      margin: 0; }
+      margin: 0;
+      margin-bottom: 10px; }

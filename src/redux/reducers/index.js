@@ -13,23 +13,23 @@ export default (state = initialState, action) => {
                 tools: action.payload
             }
         case ADD_SELECTED_TOOL:
-            return {
-                ...state,
-                selectedTools: [
-                    ...state.selectedTools,
-                    action.payload
-                ]
+            const element = state.selectedTools.find(element => element.id === action.payload.id);
+            let newState;
+
+            if (state.selectedTools.indexOf(element) === -1) {
+                newState = {
+                    ...state,
+                    selectedTools: [
+                        ...state.selectedTools,
+                        action.payload
+                    ]
+                }
+            } else {
+                newState = state;
             }
+
+            return newState;
         default: 
             return state;
     }
 }
-
-// export const getAllTools = state => {
-//     return state.tools;
-// };
-
-// export const getSelectedTools = state => {
-//     console.log('state >>', state);
-//     return state.selectedTools;
-// }

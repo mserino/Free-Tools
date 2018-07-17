@@ -4,10 +4,6 @@ import PropTypes from 'prop-types'
 import './Tool.css';
 
 const Tool = ({ tool, onToolClicked }) => {
-    // const onElementClicked = () => {
-    //     console.log('element clicked');
-    // }
-
     return(
         <li className="tool" onClick={onToolClicked}>
             <span className="tool-name">{ tool.name }</span>

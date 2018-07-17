@@ -7,7 +7,6 @@ import { onToolClicked } from '../../redux/actions';
 import './styles.css';
 
 const ToolsListContainer = ({ tools, onToolClicked }) => {
-
     return (
         <div className="tools-list">
             <h2 className="title">Select your tools</h2>
