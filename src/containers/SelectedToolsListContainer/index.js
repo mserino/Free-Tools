@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import Tool from '../../components/Tool/Tool.js';
+import Tool from '../../components/Tool';
 import './styles.css';
 
 const SelectedToolsListContainer = ({ selectedTools }) => {

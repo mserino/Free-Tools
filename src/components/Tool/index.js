@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types'
 
-import './Tool.css';
+import './styles.css';
 
 const Tool = ({ tool, onToolClicked }) => {
     return(

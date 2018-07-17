@@ -9,7 +9,6 @@ import rootReducer from './redux/reducers';
 import { fetchTools } from './redux/actions';
 
 import App from './containers/App';
-
 import './index.css';
 
 const loggerMiddleware = createLogger();

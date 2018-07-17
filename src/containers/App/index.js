@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import ToolsListContainer from '../ToolsListContainer';
 import SelectedToolsListContainer from '../SelectedToolsListContainer';
 
-import './App.css';
+import './styles.css';
 
 class App extends Component {
   render() {
@@ -11,8 +11,6 @@ class App extends Component {
       <div className="app-container">
         <ToolsListContainer />
         <SelectedToolsListContainer />
-        {/* <ToolsList tools={ tools } />
-        <SelectedTools /> */}
       </div>
     );
   }
